@@ -15,37 +15,33 @@
   <main>
     <section>
       <h2>🧠 Brain & Puzzle Games</h2>
-      <details><summary>Hex Blocks</summary> ...</details>
-      <details><summary>Rainbow Tower</summary> ...</details>
-      <details><summary>2048 (Hooda Math)</summary> ...</details>
-      <details><summary>Life Stats (Neal.fun)</summary> ...</details>
+      <details><summary>Hex Blocks</summary></details>
+      <details><summary>Rainbow Tower</summary></details>
+      <details><summary>2048 (Hooda Math)</summary></details>
+      <details><summary>Life Stats (Neal.fun)</summary></details>
       <details><summary>Stacky Shapes</summary>
-        <div class="frame-container">
-          <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-          <iframe src="https://dadvsgagegaming.github.io/Stacky-Shapes/" allowfullscreen></iframe>
-        </div>
+        <iframe src="https://dadvsgagegaming.github.io/Stacky-Shapes/" allowfullscreen></iframe>
       </details>
     </section>
 
     <section>
       <h2>🌐 Unblocked Classic Sites</h2>
-      <details><summary>FunFri</summary> ...</details>
-      <details><summary>FreezeNova</summary> ...</details>
-      <details><summary>Hooda Math</summary> ...</details>
-      <details><summary>Math Playground</summary> ...</details>
+      <details><summary>FunFri</summary></details>
+      <details><summary>FreezeNova</summary></details>
+      <details><summary>Hooda Math</summary></details>
+      <details><summary>Math Playground</summary></details>
     </section>
 
     <section>
       <h2>💻 Console-Style Browser Games</h2>
-      <details><summary>Minecraft Classic</summary> ...</details>
-      <details><summary>Call of Duty (MW3 Promo)</summary> ...</details>
-      <details><summary>Slope 3D</summary> ...</details>
-      <details><summary>Run 3</summary> ...</details>
+      <details><summary>Minecraft Classic</summary></details>
+      <details><summary>Call of Duty (MW3 Promo)</summary></details>
+      <details><summary>Slope 3D</summary></details>
+      <details><summary>Run 3</summary></details>
     </section>
 
     <section>
       <h2>🖥️ PC / Laptop Browser Games</h2>
-
       <details><summary>Call of Duty Online (MMOFPS)</summary>
         <div class="frame-container">
           <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -56,7 +52,7 @@
       <details><summary>Among Us Fan Game (Replit)</summary>
         <div class="frame-container">
           <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-          <iframe src="https://replit.com/@1Tim/Among-Us-ONLINE-Fan-Remake?lite=true&embed=true" allowfullscreen></iframe>
+          <iframe src="https://replit.com/@1Tim/Among-Us-ONLINE-Fan-Remake?lite=true&amp;embed=true" allowfullscreen></iframe>
         </div>
       </details>
 
@@ -103,7 +99,6 @@
       </details>
     </section>
 
-    <!-- 🎮 SWITCH GAMES SECTION WITH IFRAME LINKS -->
     <section>
       <h2>🎮 Switch Games (Browser Versions & Clones)</h2>
 
@@ -197,6 +192,13 @@
     <p>&copy; 2025 Zap Arcade • Full Browser Game Bank</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function openFullscreen(button) {
+      const iframe = button.nextElementSibling;
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      }
+    }
+  </script>
 </body>
 </html>
