@@ -30,37 +30,12 @@
       text-decoration: underline;
       font-weight: bold;
     }
-    .upload-btn {
-      margin-top: 20px;
-    }
-    input[type="file"] {
-      display: none;
-    }
-    label.upload-label {
-      background: #fdd835;
-      color: black;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      display: inline-block;
-    }
-    .post {
-      background: #1e1e1e;
-      margin: 20px auto;
-      padding: 15px;
-      max-width: 500px;
-      border-radius: 10px;
-    }
-    .post img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    .member-note {
-      text-align: center;
-      color: #ccc;
-      font-size: 0.9em;
+    .members-link {
+      display: block;
       margin-top: 10px;
+      color: #00e5ff;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -69,7 +44,7 @@
 <header>
   <h1>⚡ Zap Arcade ⚡</h1>
   <p>Brain teasers, console-style, unblocked PC browser games, and MORE!</p>
-  <p><a href="#members" style="color: #fdd835; font-weight: bold;">⭐ Members Only</a></p>
+  <a class="members-link" href="members.html">⭐ Members Only</a>
 </header>
 
 <main>
@@ -77,6 +52,7 @@
   <!-- My Games -->
   <section>
     <h2>My Games</h2>
+    
     <details><summary>Stacky Shapes (My First GAME)</summary>
       <div class="frame-container">
         <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -99,9 +75,10 @@
     </details>
   </section>
   
-  <!-- Brain Games -->
+  <!-- 🧠 Brain & Puzzle Games -->
   <section>
     <h2>🧠 Brain & Puzzle Games</h2>
+    
     <details><summary>MathPlayground</summary>
       <div class="frame-container">
         <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -117,9 +94,10 @@
     </details>
   </section>
 
-  <!-- Unblocked -->
+  <!-- 🚫 Unblocked Games -->
   <section>
     <h2>🚫 Unblocked Game Section (Works on School Wi-Fi)</h2>
+
     <details><summary>FunFri</summary>
       <div class="frame-container">
         <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -140,7 +118,7 @@
         <iframe src="https://ducklit.com/" allowfullscreen></iframe>
       </div>
     </details>
-    
+
     <details><summary>Scratch Unblocked!</summary>
       <div class="frame-container">
         <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -149,9 +127,10 @@
     </details>
   </section>
  
-  <!-- PC Games -->
+  <!-- 💻 PC / Laptop Browser Games -->
   <section>
     <h2>🖥️ PC / Laptop Browser Games</h2>
+
     <details><summary>Coca-Cola Clicker</summary>
       <div class="frame-container">
         <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
@@ -172,29 +151,7 @@
         <iframe src="https://scratch.mit.edu/projects/292728003/" allowfullscreen></iframe>
       </div>
     </details>
-  </section>
 
-  <!-- ⭐ Members Only -->
-  <section id="members">
-    <h2>⭐ Members Only</h2>
-    <p>Exclusive behind-the-scenes content from Dad vs Gage Gaming and real life!</p>
-
-    <div class="post">
-      <h3>🎬 Editing our new video</h3>
-      <img src="https://via.placeholder.com/400x200?text=Video+Editor+Sneak+Peek" alt="Editing">
-    </div>
-
-    <div class="post">
-      <h3>📸 Goofin’ around after filming</h3>
-      <img src="https://via.placeholder.com/400x200?text=Behind+the+Scenes" alt="Behind the Scenes">
-    </div>
-
-    <div class="upload-btn">
-      <label class="upload-label" for="upload">📤 Upload New Post</label>
-      <input type="file" id="upload" />
-    </div>
-
-    <p class="member-note">💳 This area is for premium members only. Membership support coming soon!</p>
   </section>
 
 </main>
