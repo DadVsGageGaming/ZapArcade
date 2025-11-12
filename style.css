@@ -41,16 +41,18 @@ body {
 }
 
 .lightning {
+  position: absolute;
+  top: 10%;
+  left: 50%;
   width: 5px;
   height: 120px;
   background: yellow;
-  position: absolute;
-  top: 20%;
-  left: 50%;
+  box-shadow: 0 0 30px yellow, 0 0 60px gold;
   transform: translateX(-50%);
+  z-index: 1; /* must be behind button */
   animation: strike 2s infinite;
   opacity: 0;
-  z-index: 5; /* below button */
+  pointer-events: none; /* 🔹 THIS ALLOWS BUTTON CLICK */
 }
 
 @keyframes strike {
@@ -82,4 +84,3 @@ body {
   background: gold;
   transform: scale(1.1);
 }
-
