@@ -4,26 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zap Arcade • Mega Game Hub</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Fullscreen background GIF */
+    /* Fullscreen looping background GIF */
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       background: url('https://i.pinimg.com/originals/e3/b0/fe/e3b0feef92de67ea3453d92ad55a4d95.gif') 
-                  center center / cover no-repeat;
-      z-index: -1; /* behind everything */
+                  center center / cover no-repeat fixed;
+      overflow-x: hidden;
     }
 
     header, footer { 
@@ -152,87 +141,6 @@
         <iframe src="https://www.hoodamath.com/games/ovo.html#gsc.tab=0" allowfullscreen></iframe>
       </div>
     </details>
-  </section>
-
-  <!-- 🚫 Unblocked Games -->
-  <section>
-    <h2>🚫 Unblocked Game Section (Works on School Wi-Fi)</h2>
-
-    <details><summary>FunFri</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://funfri.neocities.org/" allowfullscreen></iframe>
-      </div>
-    </details>
-
-    <details><summary>FreezeNova</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://www.freezenova.com/" allowfullscreen></iframe>
-      </div>
-    </details>
-
-    <details><summary>Blumgi Soccer Jump Only</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://jumponly.io/game/blumgi-soccer/" allowfullscreen></iframe>
-      </div>
-    </details>
-    
-    <details><summary>DuckLit</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://ducklit.com/" allowfullscreen></iframe>
-      </div>
-    </details>
-
-    <details><summary>Scratch Unblocked!</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://scratch.mit.edu/" allowfullscreen></iframe>     
-      </div>
-    </details>
-  </section>
- 
-  <!-- 💻 PC / Laptop Browser Games -->
-  <section>
-    <h2>🖥️ PC / Laptop Browser Games</h2>
-
-    <details><summary>Coca-Cola Clicker</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://cokeclicker.vertics.co/" allowfullscreen></iframe>
-      </div>
-    </details>
-
-    <details><summary>Neal.Fun</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://neal.fun/" allowfullscreen></iframe>
-      </div>
-    </details>
-    
-    <details><summary>Infinite Craft</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://neal.fun/infinite-craft/" allowfullscreen></iframe>
-      </div>
-    </details>
-    
-    <details><summary>What Beats A Rock?</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://www.whatbeatsrock.com/" allowfullscreen></iframe>
-      </div>
-    </details>
-    
-    <details><summary>2 Player Battle (Scratch)</summary>
-      <div class="frame-container">
-        <button onclick="openFullscreen(this)">🔳 Fullscreen</button>
-        <iframe src="https://scratch.mit.edu/projects/292728003/" allowfullscreen></iframe>
-      </div>
-    </details>
-
   </section>
 
 </main>
